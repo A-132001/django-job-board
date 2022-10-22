@@ -40,8 +40,10 @@ class JobList(generics.ListCreateAPIView):
     queryset = Job.objects.all()
     serializer_class = SerializerModel
 
-class JobListDetails(generics.RetrieveAPIView):
+class JobListDetails(generics.RetrieveUpdateDestroyAPIView):
     serializer_class = SerializerModel
     queryset = Job.objects.all()
     lookup_field = 'id'
+    
+
 

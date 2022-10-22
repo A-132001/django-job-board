@@ -33,7 +33,7 @@ class Job(models.Model):  #table name Job
     salary = models.IntegerField(default=1)
     experience = models.IntegerField(default=1)
     category = models.ForeignKey('Category',on_delete=models.CASCADE,blank=True)
-    image =  models.ImageField(upload_to=image_upload)
+    image =  models.ImageField(upload_to=image_upload,blank=True, null=True)
     slug = models.SlugField(blank=True,null=True)
     def __str__(self):
         return self.title

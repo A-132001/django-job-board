@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     #Apps
+    'api',
     'job',
     "bootstrap4",
     'django_filters',
