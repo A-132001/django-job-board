@@ -12,7 +12,7 @@ CORS
         "http://127.0.0.1:9000"
     ]
 
-Heroku > Create new App > django-job-board
+Heroku > Create new App > jobsboardsohag
    * brew tap heroku/brew && brew install heroku >> macos
    * heroku login
    * pip install python-decouple
